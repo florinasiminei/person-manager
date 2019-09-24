@@ -1,0 +1,15 @@
+C:\Users\Florin\source\repos\PersonManager\PersonManager\bin\Debug\PersonManager.exe.config
+C:\Users\Florin\source\repos\PersonManager\PersonManager\bin\Debug\PersonManager.exe
+C:\Users\Florin\source\repos\PersonManager\PersonManager\bin\Debug\PersonManager.pdb
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\PersonManager.csprojAssemblyReference.cache
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\MainWindow.g.cs
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\App.g.cs
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\PersonManager_MarkupCompile.cache
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\PersonManager_MarkupCompile.lref
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\MainWindow.baml
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\PersonManager.g.resources
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\PersonManager.Properties.Resources.resources
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\PersonManager.csproj.GenerateResource.cache
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\PersonManager.csproj.CoreCompileInputs.cache
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\PersonManager.exe
+C:\Users\Florin\source\repos\PersonManager\PersonManager\obj\Debug\PersonManager.pdb

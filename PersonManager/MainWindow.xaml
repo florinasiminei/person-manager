@@ -1,0 +1,25 @@
+﻿<Window x:Class="PersonManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="553.612" Width="800">
+    <Grid>
+        <Label Content="First&#xD;&#xA;Name" HorizontalAlignment="Left" Height="40" Margin="78,295,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label Content="Last&#xD;&#xA;Name" HorizontalAlignment="Left" Height="40" Margin="78,369,0,0" VerticalAlignment="Top" Width="48"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="131,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Name="first_name_txt"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="131,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Name="last_name_txt"/>
+        <ListView x:Name="availablePersonsLV" HorizontalAlignment="Left" Height="181" Margin="78,28,0,0" VerticalAlignment="Top" Width="220" >
+            <ListView.View>
+                <GridView ColumnHeaderToolTip="Available Persons Names">
+                    <GridViewColumn Header="Available Persons"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel HorizontalAlignment="Left" Height="186" Margin="78,241,0,0" VerticalAlignment="Top" Width="220"/>
+        <Button Content="Add new person" HorizontalAlignment="Left" Height="32" Margin="151,414,0,0" VerticalAlignment="Top" Width="128" Click="Add_New_Person_Click"/>
+
+    </Grid>
+</Window>
