@@ -7,19 +7,46 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="553.612" Width="800">
     <Grid>
-        <Label Content="First&#xD;&#xA;Name" HorizontalAlignment="Left" Height="40" Margin="78,295,0,0" VerticalAlignment="Top" Width="48"/>
-        <Label Content="Last&#xD;&#xA;Name" HorizontalAlignment="Left" Height="40" Margin="78,369,0,0" VerticalAlignment="Top" Width="48"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="131,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Name="first_name_txt"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="131,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Name="last_name_txt"/>
-        <ListView x:Name="availablePersonsLV" HorizontalAlignment="Left" Height="181" Margin="78,28,0,0" VerticalAlignment="Top" Width="220" >
+        <Label Content="First&#xD;&#xA;Name" HorizontalAlignment="Left" Height="40" Margin="83,240,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.454,0.077"/>
+        <Label Content="Last&#xD;&#xA;Name" HorizontalAlignment="Left" Height="40" Margin="83,285,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.56,-0.918"/>
+        <Label Content="Menu" HorizontalAlignment="Left" Height="40" Margin="83,330,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.56,-0.918"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="131,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Name="first_name_txt"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="131,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Name="last_name_txt"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="131,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Name="menu_txt"/>
+        <ListView x:Name="availablePersonsLV" HorizontalAlignment="Left" Height="181" Margin="78,28,0,0" VerticalAlignment="Top" Width="220" Foreground="#FF374B82" Background="White" >
+            <ListView.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </ListView.BorderBrush>
+            <ListView.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF4B1111" Offset="1"/>
+                </LinearGradientBrush>
+            </ListView.OpacityMask>
             <ListView.View>
                 <GridView ColumnHeaderToolTip="Available Persons Names">
-                    <GridViewColumn Header="Available Persons"></GridViewColumn>
+                    <GridViewColumn Header="Available Persons" FrameworkElement.FlowDirection="RightToLeft">
+
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
-        <StackPanel HorizontalAlignment="Left" Height="186" Margin="78,241,0,0" VerticalAlignment="Top" Width="220"/>
+        <StackPanel HorizontalAlignment="Left" Height="219" Margin="78,227,0,0" VerticalAlignment="Top" Width="220"/>
         <Button Content="Add new person" HorizontalAlignment="Left" Height="32" Margin="151,414,0,0" VerticalAlignment="Top" Width="128" Click="Add_New_Person_Click"/>
+
+        <Button Content="Invite" HorizontalAlignment="Left" Height="39" Margin="335,65,0,0" VerticalAlignment="Top" Width="116" Click="btn_Add_Click"/>
+        <ListView x:Name="dinnerInvitesLV" HorizontalAlignment="Left" Height="181" Margin="519,28,0,0" VerticalAlignment="Top" Width="220" BorderBrush="Black">
+            <ListView.View>
+                <GridView ColumnHeaderToolTip="Dinner Invites Names">
+                    <GridViewColumn Header="Dinner Invites"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox x:Name="personmenu_txt" HorizontalAlignment="Left" Height="116" Margin="519,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="Black"/>
+        <Button Content="Show menu" HorizontalAlignment="Left" Height="40" Margin="566,240,0,0" VerticalAlignment="Top" Width="151" Click="btn_Click_Menu" />
 
     </Grid>
 </Window>

@@ -34,11 +34,12 @@ namespace PersonManager.Models
             get { return _menu; }
             set { _menu = value; }
         }
-
         //this method is used to print nicely a Person object in the ListView
         public override string ToString()
         {
             return string.Format("{0} {1}", FirstName, LastName);
         }
+       
+
     }
 }
